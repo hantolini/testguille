@@ -1,0 +1,28 @@
+.container-bg {
+    background-image: url(media/ba1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40vh;
+    position: relative;
+}
+
+.container-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.text-over-image {
+    position: absolute;
+    top: 40%;
+    color: white;
+    text-align: right;
+    right: 0;
+    padding-right: 3%;
+    width: 50%;
+}
